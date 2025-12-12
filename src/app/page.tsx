@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { getAllEssays } from '@/lib/content';
 import { EssayCard } from '@/components/essay/EssayCard';
 import { Separator } from '@/components/ui/separator';
@@ -9,7 +10,16 @@ export default function HomePage() {
     <div>
       {/* 网站介绍 */}
       <section className="mb-12">
-        <h1 className="text-3xl font-bold">路屿</h1>
+        <div className="flex items-center gap-4 mb-4">
+          <Image
+            src="/avatar.jpg"
+            alt="路屿"
+            width={64}
+            height={64}
+            className="rounded-full object-cover"
+          />
+          <h1 className="text-3xl font-bold">路屿</h1>
+        </div>
         <p className="mt-4 text-lg text-muted-foreground">
           认知写作者｜框架探索者｜叙事理论实践者
         </p>
