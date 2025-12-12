@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+
+const basePath = process.env.NODE_ENV === 'production' ? '/uiluyu' : '';
 
 const navItems = [
   { href: '/', label: '首页' },
@@ -19,8 +20,8 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 h-16 border-b bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex h-full max-w-3xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-lg font-medium">
-          <Image
-            src="/avatar.jpg"
+          <img
+            src={`${basePath}/avatar.jpg`}
             alt="路屿"
             width={32}
             height={32}

@@ -1,7 +1,8 @@
-import Image from 'next/image';
 import { getAllEssays } from '@/lib/content';
 import { EssayCard } from '@/components/essay/EssayCard';
 import { Separator } from '@/components/ui/separator';
+
+const basePath = process.env.NODE_ENV === 'production' ? '/uiluyu' : '';
 
 export default function HomePage() {
   const essays = getAllEssays();
@@ -11,8 +12,8 @@ export default function HomePage() {
       {/* 网站介绍 */}
       <section className="mb-12">
         <div className="flex items-center gap-4 mb-4">
-          <Image
-            src="/avatar.jpg"
+          <img
+            src={`${basePath}/avatar.jpg`}
             alt="路屿"
             width={64}
             height={64}
