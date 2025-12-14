@@ -22,7 +22,9 @@ export default function HomePage() {
           <h1 className="text-3xl font-bold">路屿</h1>
         </div>
         <p className="mt-4 text-muted-foreground">
-          关注青少年成长。融合社会、心理与教育的多元视角，穿透主流话语的迷雾，看见真实，拥抱复杂，打开更多可能。
+          关注青少年成长。
+          <br />
+          整合社会、心理、教育等多元视角，穿透主流话语的迷雾，看见真实，拥抱复杂，打开更多可能！
         </p>
       </section>
 

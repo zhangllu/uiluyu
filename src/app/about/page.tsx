@@ -11,7 +11,9 @@ export default function AboutPage() {
       <section className="mb-8">
         <h2 className="text-xl font-medium mb-4">路屿</h2>
         <p className="text-muted-foreground leading-relaxed">
-          关注青少年成长。融合社会、心理与教育的多元视角，穿透主流话语的迷雾，看见真实，拥抱复杂，打开更多可能。
+          关注青少年成长。
+          <br />
+          整合社会、心理、教育等多元视角，穿透主流话语的迷雾，看见真实，拥抱复杂，打开更多可能！
         </p>
       </section>
 
