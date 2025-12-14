@@ -21,15 +21,8 @@ export default function HomePage() {
           />
           <h1 className="text-3xl font-bold">路屿</h1>
         </div>
-        <p className="mt-4 text-lg text-muted-foreground">
-          认知写作者｜框架探索者｜叙事理论实践者
-        </p>
-        <p className="mt-2 text-muted-foreground">
-          通过人物、故事与思想对撞，提炼结构洞见。
-          研究人物、思想与叙事如何塑造人的自我。
-        </p>
-        <p className="mt-4 text-sm text-muted-foreground/80 italic">
-          如果你对"深度理解"比"快速解决"更感兴趣，你会喜欢这里。
+        <p className="mt-4 text-muted-foreground">
+          关注青少年成长。融合社会、心理与教育的多元视角，穿透主流话语的迷雾，看见真实，拥抱复杂，打开更多可能。
         </p>
       </section>
 
